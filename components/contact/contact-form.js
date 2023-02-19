@@ -53,14 +53,14 @@ async function sendContact(contactDetails) {
     if(requestStatus === 'pending'){
     notification = {
       status: 'pending',
-      message:'Your message is own its way',
+      message:'Your message is own its way!!',
       title:'Sending Message'
     }
     }
     if(requestStatus === 'success'){
       notification = {
         status: 'success',
-        message:'Your message has been sent',
+        message:'Your message has been sent!!',
         title:'Message sent successfully'
       }
       }
@@ -68,7 +68,7 @@ async function sendContact(contactDetails) {
     if(requestStatus === 'error'){
       notification = {
         status: 'error',
-        message:requestError || 'Oops ! Your message has not been sent',
+        message:requestError || 'Oops ! Your message has not been sent!',
         title:'Error'
       }
       }
